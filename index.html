@@ -7,106 +7,146 @@
     <meta name="description" content="Tingsong Jiang's Personal Website">
     <meta name="keywords" content="Tingsong Jiang, AI, Research, Publications">
     <meta name="author" content="Tingsong Jiang">
-    <title>Tingsong Jiang</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans">
-    <link rel="stylesheet" href="defaultstyles.css">
+    <title>Tingsong Jiang - Personal Website</title>
+    <!-- 引入字体样式 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <style>
+        /* 全局样式 */
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
         }
 
+        /* 导航栏样式 */
         #nav {
-            background-color: #333;
-            overflow: hidden;
-            padding: 1em 0;
+            background-color: #2d2d2d;
+            padding: 15px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         #nav ul {
-            list-style-type: none;
+            list-style: none;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
 
         #nav ul li {
-            display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
 
         #nav ul li a {
-            color: white;
             text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
+            color: white;
+            font-weight: 500;
+            font-size: 16px;
         }
 
         #nav ul li a:hover {
             text-decoration: underline;
         }
 
+        /* 页面容器样式 */
         #page {
-            display: flex;
-            margin: 20px;
-            justify-content: center;
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* 侧边栏样式 */
         #sidebar {
-            width: 30%;
-            padding: 20px;
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
+            width: 25%;
+            float: left;
             margin-right: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
         }
 
         #sidebar img {
             width: 100%;
-            border-radius: 5px;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
+        /* 内容区域样式 */
         #content {
-            width: 65%;
+            width: 70%;
+            float: left;
+        }
+
+        /* 标题样式 */
+        h1, h3 {
+            font-weight: 700;
+            color: #2d2d2d;
         }
 
         h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
-            color: #333;
-        }
-
-        p {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #666;
+            margin-bottom: 20px;
+            font-size: 32px;
+            text-align: center;
         }
 
         h3 {
-            color: #444;
-            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2d2d2d;
+            font-size: 24px;
         }
 
+        /* 段落和文本样式 */
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        /* 无序列表样式 */
         ul {
             padding-left: 20px;
         }
 
         ul li {
-            font-family: 'Verdana', sans-serif;
+            margin: 10px 0;
+            font-size: 16px;
             line-height: 1.6;
+            color: #333;
         }
 
         ul li a {
-            color: #1a0dab;
             text-decoration: none;
+            color: #1a73e8;
         }
 
         ul li a:hover {
             text-decoration: underline;
         }
+
+        /* 清除浮动 */
+        .clear {
+            clear: both;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #2d2d2d;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
     </style>
 </head>
-
 <body>
     <div id="nav">
         <ul>
