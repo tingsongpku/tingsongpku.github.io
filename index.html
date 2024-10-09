@@ -1,78 +1,183 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Tingsong Jiang</title>
-<link href="defaultstyles.css" rel="stylesheet" media="screen" />
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tingsong Jiang's Personal Website">
+    <meta name="keywords" content="Tingsong Jiang, AI, Research, Publications">
+    <meta name="author" content="Tingsong Jiang">
+    <title>Tingsong Jiang</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans">
+    <link rel="stylesheet" href="defaultstyles.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        #nav {
+            background-color: #333;
+            overflow: hidden;
+            padding: 1em 0;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        #nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        #nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #page {
+            display: flex;
+            margin: 20px;
+            justify-content: center;
+        }
+
+        #sidebar {
+            width: 30%;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            margin-right: 20px;
+        }
+
+        #sidebar img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        #content {
+            width: 65%;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        h3 {
+            color: #444;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            font-family: 'Verdana', sans-serif;
+            line-height: 1.6;
+        }
+
+        ul li a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
     <div id="nav">
-    	<ul>
-      	<li><a href="index.html">Home</a></li>
-        <!-- <li><a href="research.html">Research</a></li> -->
-	<li><a href="publication2.html">Publications</a></li>
-    <li><a href="conference.html">Conference</a></li>
-	<!-- <li><a href="cv.html">CV</a></li> -->
-	<!-- <li><a href="updates.html">Updates</a></li> -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publication2.html">Publications</a></li>
+            <li><a href="conference.html">Conference</a></li>
         </ul>
     </div>
+
     <div id="page">
-		
-        <div id="content">
-        
         <div id="sidebar">
-        		<img src="avatar.png" title="me" id="fac_photo"/>
-        		<h3>Contact</h3>
-			<p> <br />
-        		  <br />
- 				Beijing, China, 100871<br />
-  				Email: tingsong(at)pku.edu.cn <br/></p>
-        	</div>
-        
-        <h1>Tingsong Jiang</h1>
-<i> Researcher, PhD from Peking University </i> <br />
-  <a  href="https://dblp.org/pid/169/3183.html">My DBLP,</a> <br />
-    <a  href="https://www.researchgate.net/profile/Tingsong-Jiang-2/research">My Researchgate,</a><br />
-        <a href="https://scholar.google.com/citations?hl=zh-CN&user=i77rUBEAAAAJ">My Google Scholar</a><br />
- <br>
+            <img src="avatar.png" title="Tingsong Jiang" alt="Tingsong Jiang's photo" />
+            <h3>Contact</h3>
+            <p>
+                Beijing, China, 100871<br />
+                Email: tingsong(at)pku.edu.cn
+            </p>
+        </div>
 
-I am a researcher at Chinese Academy of Military Science. 
-I completed my PhD study at Peking University with <a href="https://cs.pku.edu.cn/info/1237/2101.htm">Prof. Zhifang Sui</a>. 
-During my PhD, I work with Prof. Baobao Chang and Prof. Sujian Li, 
-and Dr. Jing Liu, Dr. <a href="http://research.microsoft.com/en-us/people/cyl">Chin-Yew Lin</a> at Microsoft Research Asia.
-I received bachelor degree from EECS, Peking University.
-I am interested in <b>AI Safety and Security</b>. 
-Typically, <b>Adversarial Examples,  Interpretable Deep Learning, Model Robustness, Fairness Testing, AI Testing and Evaluation, </b>
-		and their applications in real-world scenarios.
-I serve as a reviewer for the top conferences and journals such as CVPR, ECCV, ACL, EMNLP,  AAAI, TIP, Pattern Recognition, etc.</p>
-<mark>【课题组有2025年博士硕士招生计划和实习岗位，含上海交大、浙大、中山、电子科大等计算机专业联合培养，欢迎邮件沟通:)】</mark>
+        <div id="content">
+            <h1>Tingsong Jiang</h1>
+            <p><i>Researcher, PhD from Peking University</i></p>
+            <p>
+                <a href="https://dblp.org/pid/169/3183.html">My DBLP</a>, 
+                <a href="https://www.researchgate.net/profile/Tingsong-Jiang-2/research">My Researchgate</a>, 
+                <a href="https://scholar.google.com/citations?hl=zh-CN&user=i77rUBEAAAAJ">My Google Scholar</a>
+            </p>
+            <p>
+                I am a researcher at the Chinese Academy of Military Science. I completed my PhD at Peking University under the supervision of 
+                <a href="https://cs.pku.edu.cn/info/1237/2101.htm">Prof. Zhifang Sui</a>. During my PhD, I worked with Prof. Baobao Chang, Prof. Sujian Li, and Dr. Jing Liu, as well as 
+                Dr. <a href="http://research.microsoft.com/en-us/people/cyl">Chin-Yew Lin</a> at Microsoft Research Asia. I received my bachelor's degree from the EECS, Peking University.
+                My research interests include <b>AI Safety and Security</b>, particularly in <b>Adversarial Examples, Interpretable Deep Learning, Model Robustness, Fairness Testing, AI Testing and Evaluation</b>, 
+                and their applications in real-world scenarios. I serve as a reviewer for top conferences and journals such as CVPR, ECCV, ACL, EMNLP, AAAI, TIP, and Pattern Recognition.
+            </p>
+            <p><mark>【课题组有2025年博士硕士招生计划和实习岗位，含上海交大、浙大、中山、电子科大等计算机专业联合培养，欢迎邮件沟通:)】</mark></p>
 
-<h3>Publication:</h3>
-    My publication list can be found at: <a href="http://tingsongpku.github.io/publication.html">http://tingsongpku.github.io/publication.html</a>   
-<h3>News:</h3>
-	<ul><li style="font-family:verdana"> 09/2024, one paper is accepted to <a href="https://ieeexplore.ieee.org/abstract/document/10681296">IEEE TPAMI</a> </li></ul>
-	<ul><li style="font-family:verdana"> 08/2024, one paper is accepted to EAAI </li></ul>
-	<ul><li style="font-family:verdana"> 07/2024, one paper is accepted to <a href="https://eccv.ecva.net/Conferences/2024">ECCV 2024</a></li></ul>
-        <ul><li style="font-family:verdana"> 06/2024, one paper is accepted to 2024 IEEE CEC </li></ul>
-	<ul><li style="font-family:verdana"> 06/2024, one paper is accepted to Neural Networks </li></ul>
-	<ul><li style="font-family:verdana"> 05/2024, one paper is accepted to Information Sciences </li></ul>
-	<ul><li style="font-family:verdana"> 04/2024, one paper is accepted to Neural Networks </li></ul>
-	<ul><li style="font-family:verdana"> 01/2024, one paper is accepted to IEEE TIP </li></ul>
-	<ul><li style="font-family:verdana"> 01/2024, two papers are accepted to Pattern Recognition </li></ul>
-	<ul><li style="font-family:verdana"> 10/2023, one paper is accepted to ICCV 2023 </li></ul>
-	<ul><li style="font-family:verdana"> 09/2023, one paper is accepted to IEEE TGRS </li></ul>
-	</div>
-	</div>
-	
+            <h3>Publications:</h3>
+            <p>My publication list can be found at: <a href="http://tingsongpku.github.io/publication.html">http://tingsongpku.github.io/publication.html</a></p>
 
-	
-    
-    
-    <div id="clustrmaps-widget" style="padding: 15px; float:right"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://getao.github.io', 'user' : 1172156, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2015-06-10', 'lang' : 'zh', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www3.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www3.clustrmaps.com/user/04811e2bc"><img src="http://www3.clustrmaps.com/stats/maps-no_clusters/getao.github.io-thumb.jpg" alt="Locations of visitors to this page" style="float:right"/></a></noscript>
-	<script language="javascript" type="text/javascript" src="http://js.users.51.la/18855046.js"></script>
-<noscript><a href="http://www.51.la/?18855046" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/18855046.asp" style="border:none" /></a></noscript>
+            <h3>News:</h3>
+            <ul>
+                <li>09/2024, one paper is accepted to <a href="https://ieeexplore.ieee.org/abstract/document/10681296">IEEE TPAMI</a></li>
+                <li>08/2024, one paper is accepted to EAAI</li>
+                <li>07/2024, one paper is accepted to <a href="https://eccv.ecva.net/Conferences/2024">ECCV 2024</a></li>
+                <li>06/2024, one paper is accepted to 2024 IEEE CEC</li>
+                <li>06/2024, one paper is accepted to Neural Networks</li>
+                <li>05/2024, one paper is accepted to Information Sciences</li>
+                <li>04/2024, one paper is accepted to Neural Networks</li>
+                <li>01/2024, one paper is accepted to IEEE TIP</li>
+                <li>01/2024, two papers are accepted to Pattern Recognition</li>
+                <li>10/2023, one paper is accepted to ICCV 2023</li>
+                <li>09/2023, one paper is accepted to IEEE TGRS</li>
+            </ul>
+        </div>
+    </div>
 
+    <div id="clustrmaps-widget" style="padding: 15px; float:right"></div>
+    <script type="text/javascript">
+        var _clustrmaps = {'url' : 'http://getao.github.io', 'user' : 1172156, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2015-06-10', 'lang' : 'zh', 'corners' : 'square' };
+        (function (){ 
+            var s = document.createElement('script'); 
+            s.type = 'text/javascript'; 
+            s.async = true; 
+            s.src = 'http://www3.clustrmaps.com/counter/map.js'; 
+            var x = document.getElementsByTagName('script')[0]; 
+            x.parentNode.insertBefore(s, x); 
+        })();
+    </script>
+    <noscript>
+        <a href="http://www3.clustrmaps.com/user/04811e2bc"><img src="http://www3.clustrmaps.com/stats/maps-no_clusters/getao.github.io-thumb.jpg" alt="Locations of visitors to this page" style="float:right"/></a>
+    </noscript>
 </body>
+
 </html>
