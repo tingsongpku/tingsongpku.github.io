@@ -1,20 +1,76 @@
-﻿img {
-    max-width: 100%;
-    height: auto;
+﻿:root {
+  --bg: #fbfbfd;
+  --surface: #ffffff;
+  --surface-soft: #f5f7fb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --primary: #2563eb;
+  --primary-strong: #1d4ed8;
+  --accent: #0f172a;
+  --maxw: 1040px;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
 }
-
-#sidebar {
-    min-width: 210px;
-    margin: 0 15px;
-    float: right;
-    line-height: 140%;
-    background-color: #eee;
-    border: 1px solid #e5e5e5;
-    padding: 0 10px 10px;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: var(--text);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.75;
 }
-
-#content {
-    margin-left: 15px;
-    margin-right: 15px;
-    line-height: 160%;
+img { max-width: 100%; height: auto; border: none; }
+a { color: var(--primary); text-decoration: none; }
+a:hover { color: var(--primary-strong); text-decoration: underline; }
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(255,255,255,0.94); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-wrap {
+  max-width: var(--maxw); margin: 0 auto; padding: 0 24px; min-height: 64px;
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.brand { font-size: 1.1rem; font-weight: 700; color: var(--accent); }
+.nav { display: flex; gap: 18px; flex-wrap: wrap; }
+.nav a { color: var(--muted); font-size: 0.97rem; }
+.nav a.active { color: var(--accent); font-weight: 600; }
+.container { max-width: var(--maxw); margin: 0 auto; padding: 36px 24px 56px; }
+.hero { display: grid; grid-template-columns: minmax(0,1.65fr) minmax(280px,0.9fr); gap: 28px; align-items: start; }
+.hero-main h1, .page-head h1 { margin: 0 0 14px; font-size: clamp(2.2rem, 4vw, 3.2rem); line-height: 1.15; }
+.hero-subtitle { margin: 0 0 14px; color: var(--muted); font-size: 1rem; }
+.hero-main p { margin: 0 0 14px; }
+.link-row { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 22px; }
+.note { padding: 14px 16px; border: 1px solid #fde68a; background: #fffbea; border-radius: 10px; color: #854d0e; }
+.hero-side { padding: 18px 18px 14px; border: 1px solid var(--line); background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); }
+.hero-side h2, .section h2 { margin: 0 0 14px; font-size: 1.35rem; color: var(--accent); }
+.side-list { margin: 0; padding-left: 18px; }
+.side-list li { margin-bottom: 8px; }
+.section { margin-top: 40px; }
+.section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.section-head h2 { margin: 0; }
+.section-head p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.news-list, .project-list, .pub-list { list-style: none; margin: 0; padding: 0; }
+.news-list li, .project-card, .pub-item { border: 1px solid var(--line); background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); }
+.news-list li { padding: 14px 16px; margin-bottom: 12px; }
+.news-date { display: inline-block; min-width: 74px; margin-right: 10px; color: var(--muted); font-weight: 700; }
+.pub-item { padding: 18px 18px 16px; margin-bottom: 14px; }
+.pub-title { margin: 0 0 8px; font-size: 1.08rem; line-height: 1.45; }
+.pub-authors, .pub-venue, .pub-note, .page-intro, .project-card p, .project-meta { margin: 0 0 8px; color: var(--muted); }
+.pub-links, .project-links { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+.pub-thumb { margin-top: 12px; max-width: 320px; border: 1px solid var(--line); border-radius: 10px; }
+.page-head { margin-bottom: 28px; }
+.page-intro { max-width: 760px; }
+.project-list { display: grid; gap: 18px; }
+.project-card { padding: 22px 22px 18px; }
+.project-card h3 { margin: 0 0 10px; font-size: 1.18rem; }
+.project-tags { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 14px; }
+.project-tags span { padding: 4px 10px; border-radius: 999px; background: var(--surface-soft); color: var(--primary-strong); font-size: 0.9rem; }
+.footer { max-width: var(--maxw); margin: 0 auto; padding: 0 24px 36px; color: var(--muted); font-size: 0.92rem; }
+@media (max-width: 860px) { .hero { grid-template-columns: 1fr; } }
+@media (max-width: 680px) {
+  .nav-wrap { align-items: flex-start; flex-direction: column; padding-top: 12px; padding-bottom: 12px; }
+  .container { padding-left: 18px; padding-right: 18px; }
+  .news-date { display: block; margin: 0 0 4px; }
 }

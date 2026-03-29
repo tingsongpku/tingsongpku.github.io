@@ -1,157 +1,131 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tingsong Jiang's academic homepage">
-    <meta name="keywords" content="Tingsong Jiang, AI Safety, Adversarial Examples, Publications">
-    <meta name="author" content="Tingsong Jiang">
-    <title>Tingsong Jiang</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        #nav {
-            background-color: #2d2d2d;
-            padding: 10px 0;
-            margin-bottom: 30px;
-        }
-
-        #nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        #nav ul li {
-            margin: 0 15px;
-        }
-
-        #nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-
-        #nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        #page {
-            width: 70%;
-            margin: auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h3 {
-            border-bottom: 2px solid #2d2d2d;
-            padding-bottom: 10px;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .news-list li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic homepage of Tingsong Jiang.">
+  <title>Tingsong Jiang</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div id="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publication2.html">Publications</a></li>
-            <li><a href="conference.html">Conference</a></li>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">Tingsong Jiang</a>
+      <nav class="nav">
+        <a class="active" href="index.html">About</a>
+        <a href="publication2.html">Publications</a>
+        <a href="opensources.html">OpenSources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-main">
+        <h1>Tingsong Jiang</h1>
+        <p class="hero-subtitle">Researcher</p>
+        <p>
+          My research interests include <strong>AI Safety and Security</strong>, particularly in adversarial examples,
+          interpretable deep learning, model robustness, knowledge graph, AI testing and evaluation, and their
+          applications in real-world scenarios.
+        </p>
+        <p>
+          I serve as a reviewer for top conferences and journals such as CVPR, ECCV, ACL, EMNLP, AAAI, TIP,
+          and Pattern Recognition.
+        </p>
+
+        <div class="link-row">
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=i77rUBEAAAAJ">Google Scholar</a>
+          <a href="https://dblp.org/pid/169/3183.html">DBLP</a>
+          <a href="https://www.researchgate.net/profile/Tingsong-Jiang-2/research">ResearchGate</a>
+          <a href="mailto:tingsong@pku.edu.cn">tingsong@pku.edu.cn</a>
+          <a href="mailto:tingsongad@163.com">tingsongad@163.com</a>
+        </div>
+
+        <div class="note">
+          The research group has openings for PhD students, master students, and interns, including joint training opportunities
+          with Shanghai Jiao Tong University, Zhejiang University, Sun Yat-sen University, and University of Electronic Science and Technology of China.
+          Email inquiries are welcome.
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <h2>Research Focus</h2>
+        <ul class="side-list">
+          <li>Adversarial examples in digital and physical worlds</li>
+          <li>Robustness evaluation and trustworthy AI systems</li>
+          <li>Vision foundation model security</li>
+          <li>Automated attack-and-defense platforms</li>
+          <li>AI testing, evaluation, and deployment safety</li>
         </ul>
-    </div>
+      </aside>
+    </section>
 
-    <div id="page">
-        <div id="sidebar">
-            <h3>Contact</h3>
-            <p>Email: tingsong(at)pku.edu.cn, tingsongad(at)163.com</p>
-        </div>
+    <section class="section">
+      <div class="section-head">
+        <h2>News</h2>
+        <p>Paper updates since 2022</p>
+      </div>
+      <ul class="news-list">
+        <li><span class="news-date">2025.11</span>Preprint <a href="https://arxiv.org/abs/2504.08915">"Parameter-Free Fine-tuning via Redundancy Elimination for Vision Foundation Models"</a> is available on arXiv.</li>
+        <li><span class="news-date">2025.01</span>Paper <a href="https://ieeexplore.ieee.org/document/10857641">"A3D: A Platform of Searching for Robust Neural Architectures and Efficient Adversarial Attacks"</a> is published in IEEE TPAMI.</li>
+        <li><span class="news-date">2025.02</span>Paper <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32398">"Robust SAM: On the Adversarial Robustness of Vision Foundation Models"</a> is published at AAAI 2025.</li>
+        <li><span class="news-date">2025.01</span>Paper <a href="https://www.sciencedirect.com/science/article/pii/S1568494625001292">"Two-stage optimized unified adversarial patch for attacking visible-infrared cross-modal detectors in the physical world"</a> is published in Applied Soft Computing.</li>
+        <li><span class="news-date">2025.01</span>Paper <a href="https://ieeexplore.ieee.org/abstract/document/10681296">"Optimizing Latent Variables in Integrating Transfer and Query Based Attack Framework"</a> is published in IEEE TPAMI.</li>
+        <li><span class="news-date">2025.04</span>Paper <a href="https://www.sciencedirect.com/science/article/pii/S0031320324009075">"Gradient-based Sparse Voxel Attacks on Point Cloud Object Detection"</a> is published in Pattern Recognition.</li>
+        <li><span class="news-date">2025.07</span>Paper <a href="https://arxiv.org/abs/2407.06688">"Universal Multi-view Black-box Attack Against Object Detectors via Layout Optimization"</a> is published in IEEE TCSVT.</li>
+        <li><span class="news-date">2025.09</span>Paper <a href="https://doi.org/10.1109/TNNLS.2025.3563855">"Improving the Transferability of Adversarial Examples by Feature Augmentation"</a> is published in IEEE TNNLS.</li>
+        <li><span class="news-date">2024.07</span>Paper <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06758.pdf">"PapMOT: Exploring Adversarial Patch Attack against Multiple Object Tracking"</a> is published at ECCV 2024.</li>
+        <li><span class="news-date">2024.08</span>Paper <a href="https://doi.org/10.1016/j.engappai.2024.109141">"Black-box adversarial patch attacks using differential evolution against aerial imagery object detectors"</a> is published in EAAI.</li>
+        <li><span class="news-date">2024.01-2022.02</span>More recent paper updates are listed in detail on the <a href="publication2.html">publications page</a>.</li>
+      </ul>
+    </section>
 
-        <div id="content">
-            <h1>Tingsong Jiang</h1>
-            <p><i>Researcher</i></p>
-            <p>
-                <a href="https://dblp.org/pid/169/3183.html">My DBLP</a>,
-                <a href="https://www.researchgate.net/profile/Tingsong-Jiang-2/research">My ResearchGate</a>,
-                <a href="https://scholar.google.com/citations?hl=zh-CN&user=i77rUBEAAAAJ">My Google Scholar</a>
-            </p>
-            <p>
-                My research interests include <b>AI Safety and Security</b>, particularly in
-                <b>Adversarial Examples, Interpretable Deep Learning, Model Robustness, Knowledge Graph,
-                AI Testing and Evaluation</b>, and their applications in real-world scenarios.
-                I serve as a reviewer for top conferences and journals such as CVPR, ECCV, ACL, EMNLP,
-                AAAI, TIP, and Pattern Recognition.
-            </p>
-            <p><mark>The research group has openings for PhD students, master students, and interns, including joint training opportunities with Shanghai Jiao Tong University, Zhejiang University, Sun Yat-sen University, and University of Electronic Science and Technology of China. Email inquiries are welcome.</mark></p>
+    <section class="section">
+      <div class="section-head">
+        <h2>Selected Publications</h2>
+        <p>Recent representative works</p>
+      </div>
+      <div class="pub-list">
+        <article class="pub-item">
+          <h3 class="pub-title"><a href="https://arxiv.org/abs/2504.08915">Parameter-Free Fine-tuning via Redundancy Elimination for Vision Foundation Models</a></h3>
+          <p class="pub-authors">Jiahuan Long, Tingsong Jiang*, Wen Yao*, Yizhe Xiong, Zhengqin Xu, Shuai Jia, Liu Hanqing, Chao Ma*</p>
+          <p class="pub-venue">arXiv preprint, 2025</p>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2504.08915">Paper</a></div>
+        </article>
 
-            <h3>News</h3>
-            <ul class="news-list">
-                <li>11/2025, preprint <a href="https://arxiv.org/abs/2504.08915">"Parameter-Free Fine-tuning via Redundancy Elimination for Vision Foundation Models"</a> is available on arXiv.</li>
-                <li>2025, paper <a href="https://ieeexplore.ieee.org/document/10857641">"A3D: A Platform of Searching for Robust Neural Architectures and Efficient Adversarial Attacks"</a> is published in IEEE TPAMI.</li>
-                <li>2025, paper <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32398">"Robust SAM: On the Adversarial Robustness of Vision Foundation Models"</a> is published at AAAI 2025.</li>
-                <li>2025, paper <a href="https://www.sciencedirect.com/science/article/pii/S1568494625001292">"Two-stage optimized unified adversarial patch for attacking visible-infrared cross-modal detectors in the physical world"</a> is published in Applied Soft Computing.</li>
-                <li>2025, paper <a href="https://ieeexplore.ieee.org/abstract/document/10681296">"Optimizing Latent Variables in Integrating Transfer and Query Based Attack Framework"</a> is published in IEEE TPAMI.</li>
-                <li>2025, paper <a href="https://www.sciencedirect.com/science/article/pii/S0031320324009075">"Gradient-based Sparse Voxel Attacks on Point Cloud Object Detection"</a> is published in Pattern Recognition.</li>
-                <li>2025, paper <a href="https://arxiv.org/abs/2407.06688">"Universal Multi-view Black-box Attack Against Object Detectors via Layout Optimization"</a> is published in IEEE TCSVT.</li>
-                <li>2025, paper <a href="https://doi.org/10.1109/TNNLS.2025.3563855">"Improving the Transferability of Adversarial Examples by Feature Augmentation"</a> is published in IEEE TNNLS.</li>
-                <li>2024, paper <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06758.pdf">"PapMOT: Exploring Adversarial Patch Attack against Multiple Object Tracking"</a> is published at ECCV 2024.</li>
-                <li>2024, paper <a href="https://doi.org/10.1016/j.engappai.2024.109141">"Black-box adversarial patch attacks using differential evolution against aerial imagery object detectors"</a> is published in EAAI.</li>
-                <li>2024, paper <a href="https://doi.org/10.1016/j.neucom.2024.127431">"Adversarial patch-based false positive creation attacks against aerial imagery object detectors"</a> is published in Neurocomputing.</li>
-                <li>2024, paper <a href="https://doi.org/10.1016/j.ins.2024.120827">"Multi-objective evolutionary search of variable-length composite semantic perturbations"</a> is published in Information Sciences.</li>
-                <li>2024, paper <a href="https://doi.org/10.1007/s41965-024-00142-3">"Adversarial attacks in computer vision: a survey"</a> is published in Journal of Membrane Computing.</li>
-                <li>2024, paper <a href="https://doi.org/10.1016/j.neunet.2024.106310">"Adversarial infrared blocks: A multi-view black-box attack to thermal infrared detectors in physical world"</a> is published in Neural Networks.</li>
-                <li>2024, paper <a href="https://doi.org/10.1016/j.neunet.2024.106391">"An invisible, robust copyright protection method for DNN-generated content"</a> is published in Neural Networks.</li>
-                <li>2024, paper <a href="https://doi.org/10.1016/j.neunet.2024.106459">"Adversarial Infrared Curves: An attack on infrared pedestrian detectors in the physical world"</a> is published in Neural Networks.</li>
-                <li>2024, paper <a href="https://doi.org/10.1016/j.patcog.2023.110038">"Efficient search of comprehensively robust neural architectures via multi-fidelity evaluation"</a> is published in Pattern Recognition.</li>
-                <li>2024, paper <a href="https://doi.org/10.1016/j.patcog.2024.110252">"AdvOps: Decoupling adversarial examples"</a> is published in Pattern Recognition.</li>
-                <li>2024, paper <a href="https://doi.org/10.1109/TIP.2023.3345136">"Improving Transferability of Universal Adversarial Perturbation With Feature Disruption"</a> is published in IEEE Transactions on Image Processing.</li>
-                <li>2023, paper <a href="https://doi.org/10.1016/j.asoc.2023.110370">"Bayesian evolutionary optimization for crafting high-quality adversarial examples with limited query budget"</a> is published in Applied Soft Computing.</li>
-                <li>2023, paper <a href="https://doi.org/10.1016/j.neucom.2023.05.034">"Adversarial patch attacks against aerial imagery object detectors"</a> is published in Neurocomputing.</li>
-                <li>2023, paper <a href="https://doi.org/10.1016/j.neucom.2023.07.012">"A multi-objective memetic algorithm for automatic adversarial attack optimization design"</a> is published in Neurocomputing.</li>
-                <li>2023, paper <a href="https://doi.org/10.1016/j.neunet.2023.08.001">"Differential evolution based dual adversarial camouflage: Fooling human eyes and object detectors"</a> is published in Neural Networks.</li>
-                <li>2023, paper <a href="https://doi.org/10.1016/j.patcog.2023.108979">"Adaptive momentum variance for attention-guided sparse adversarial attacks"</a> is published in Pattern Recognition.</li>
-                <li>2023, paper <a href="https://doi.org/10.1109/TGRS.2023.3250916">"Natural Weather-Style Black-Box Adversarial Attacks Against Optical Aerial Detectors"</a> is published in IEEE TGRS.</li>
-                <li>2023, paper <a href="https://doi.org/10.1109/ICCV.2023.00443">"RFLA: A Stealthy Reflected Light Adversarial Attack in the Physical World"</a> is published at ICCV 2023.</li>
-                <li>2022, paper <a href="https://ieeexplore.ieee.org/document/9714259">"An Approximated Gradient Sign Method Using Differential Evolution for Black-Box Adversarial Attack"</a> is published in IEEE Transactions on Evolutionary Computation.</li>
-                <li>2022, paper <a href="https://aaai.org/papers/02414-fca-learning-a-3d-full-coverage-vehicle-camouflage-for-multi-view-physical-adversarial-attack/">"FCA: Learning a 3D Full-Coverage Vehicle Camouflage for Multi-View Physical Adversarial Attack"</a> is published at AAAI 2022.</li>
-                <li>2022, paper <a href="https://ieeexplore.ieee.org/document/9892767/">"Deep Monte Carlo Quantile Regression for Quantifying Aleatoric Uncertainty in Physics-informed Temperature Field Reconstruction"</a> is published at IJCNN 2022.</li>
-            </ul>
-        </div>
-    </div>
+        <article class="pub-item">
+          <h3 class="pub-title"><a href="https://ieeexplore.ieee.org/document/10857641">A3D: A Platform of Searching for Robust Neural Architectures and Efficient Adversarial Attacks</a></h3>
+          <p class="pub-authors">Jialiang Sun, Wen Yao*, Tingsong Jiang*, Chao Li, Xiaoqian Chen</p>
+          <p class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025</p>
+          <div class="pub-links"><a href="https://ieeexplore.ieee.org/document/10857641">Paper</a><a href="opensources.html">Project</a></div>
+        </article>
 
-    <div id="clustrmaps-widget" style="padding: 15px; float:right"></div>
-    <script type="text/javascript">
-        var _clustrmaps = { 'url': 'http://getao.github.io', 'user': 1172156, 'server': '3', 'id': 'clustrmaps-widget', 'version': 1, 'date': '2015-06-10', 'lang': 'zh', 'corners': 'square' };
-        (function () {
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = 'http://www3.clustrmaps.com/counter/map.js';
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-        })();
-    </script>
-    <noscript>
-        <a href="http://www3.clustrmaps.com/user/04811e2bc"><img src="http://www3.clustrmaps.com/stats/maps-no_clusters/getao.github.io-thumb.jpg" alt="Locations of visitors to this page" style="float:right" /></a>
-    </noscript>
+        <article class="pub-item">
+          <h3 class="pub-title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32398">Robust SAM: On the Adversarial Robustness of Vision Foundation Models</a></h3>
+          <p class="pub-authors">Jiahuan Long, Zhengqin Xu, Tingsong Jiang, Wen Yao*, Shuai Jia, Chao Ma*, Xiaoqian Chen</p>
+          <p class="pub-venue">AAAI 2025</p>
+          <div class="pub-links"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/32398">Paper</a></div>
+        </article>
+
+        <article class="pub-item">
+          <h3 class="pub-title"><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06758.pdf">PapMOT: Exploring Adversarial Patch Attack against Multiple Object Tracking</a></h3>
+          <p class="pub-authors">Jiahuan Long, Tingsong Jiang, Wen Yao*, Shuai Jia, Wenjia Zhang, Weien Zhou, Chao Ma*, Xiaoqian Chen</p>
+          <p class="pub-venue">ECCV 2024</p>
+          <div class="pub-links"><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/06758.pdf">Paper</a><a href="https://eccv.ecva.net/virtual/2024/poster/1816">Poster</a></div>
+          <img class="pub-thumb" src="data/ECCV poster.jpg" alt="ECCV poster for PapMOT">
+        </article>
+
+        <article class="pub-item">
+          <h3 class="pub-title"><a href="https://aaai.org/papers/02414-fca-learning-a-3d-full-coverage-vehicle-camouflage-for-multi-view-physical-adversarial-attack/">FCA: Learning a 3D Full-Coverage Vehicle Camouflage for Multi-View Physical Adversarial Attack</a></h3>
+          <p class="pub-authors">Donghua Wang, Tingsong Jiang*, Jialiang Sun, Weien Zhou, Zhiqiang Gong, Xiaoya Zhang, Wen Yao, Xiaoqian Chen*</p>
+          <p class="pub-venue">AAAI 2022</p>
+          <div class="pub-links"><a href="https://aaai.org/papers/02414-fca-learning-a-3d-full-coverage-vehicle-camouflage-for-multi-view-physical-adversarial-attack/">Paper</a><a href="opensources.html">Project</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">Last updated based on the provided Google Scholar profile and project references.</div>
 </body>
 </html>
-
-
-
-
