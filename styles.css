@@ -1,0 +1,20 @@
+﻿img {
+    max-width: 100%;
+    height: auto;
+}
+
+#sidebar {
+    min-width: 210px;
+    margin: 0 15px;
+    float: right;
+    line-height: 140%;
+    background-color: #eee;
+    border: 1px solid #e5e5e5;
+    padding: 0 10px 10px;
+}
+
+#content {
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 160%;
+}
